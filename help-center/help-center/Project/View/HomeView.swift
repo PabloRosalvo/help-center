@@ -12,7 +12,7 @@ final class HomeView: UIView, ViewConfiguration {
         let imageview = UIImageView()
         imageview.image = UIImage(named: "image_home")
         imageview.layer.cornerRadius = 14
-        imageview.layer.masksToBounds = true // Certifique-se de que os cantos arredondados sejam aplicados
+        imageview.layer.masksToBounds = true 
         imageview.contentMode = .scaleAspectFill
         return imageview
     }()

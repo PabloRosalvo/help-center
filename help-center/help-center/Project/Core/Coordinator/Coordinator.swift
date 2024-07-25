@@ -1,12 +1,3 @@
-//
-//  Coordinator.swift
-//  lightning-network
-//
-//  Created by Pablo Rosalvo de Melo Lopes on 23/06/24.
-//
-
-import UIKit
-
 import UIKit
 
 protocol Coordinator: AnyObject {

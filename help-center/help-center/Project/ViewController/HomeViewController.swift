@@ -1,11 +1,3 @@
-//
-//  HomeViewController.swift
-//  lightning-network
-//
-//  Created by Pablo Rosalvo de Melo Lopes on 24/06/24.
-//
-
-import UIKit
 import UIKit
  
 class HomeViewController: UIViewController, HomeDelegate {
@@ -20,6 +12,11 @@ class HomeViewController: UIViewController, HomeDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let api = Network()
+        api.fetchListNodes { result, error in
+            print(result)
+        }
     }
     
     override func loadView() {

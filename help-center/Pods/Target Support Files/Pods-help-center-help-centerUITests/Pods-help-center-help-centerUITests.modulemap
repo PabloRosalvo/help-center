@@ -1,0 +1,6 @@
+framework module Pods_help_center_help_centerUITests {
+  umbrella header "Pods-help-center-help-centerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
