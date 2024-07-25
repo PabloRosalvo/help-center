@@ -1,7 +1,7 @@
 import Foundation
 
 protocol NetworkApiProtocol {
-    func fetchListNodes(completion: @escaping (HelpeCenter?, RequestError?)  -> Swift.Void)
+    func fetch(completion: @escaping (HelpeCenter?, RequestError?)  -> Swift.Void)
 }
 
 class Network: NetworkApiProtocol {
@@ -12,7 +12,7 @@ class Network: NetworkApiProtocol {
     init(requestManagerProtocol: RequestManagerProtocol = RequestManager()) {
         self.requestManagerProtocol = requestManagerProtocol
     }
-    func fetchListNodes(completion: @escaping (HelpeCenter?, RequestError?) -> Void) {
+    func fetch(completion: @escaping (HelpeCenter?, RequestError?) -> Void) {
         guard let url = URL(string: BaseUrl.url) else {
             return
         }

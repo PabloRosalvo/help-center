@@ -1,10 +1,5 @@
 import UIKit
 
-protocol HomeCoordinatorActionDelegate: AnyObject {
-    func goToListLightning()
-    func back()
-}
-
 class HomeCoordinator: Coordinator {
     var navigationController: UINavigationController
     var childCoordinators = [Coordinator]()
@@ -18,7 +13,7 @@ class HomeCoordinator: Coordinator {
         let viewModel = HomeViewModel()
         let viewController = HomeViewController(viewModel: viewModel)
         viewModel.actionButtonTapped = { [weak self] in
-            self?.goToListLightning()
+            self?.goToHelperCenterList()
         }
         viewController.coordinator = self
         navigationController.setViewControllers([viewController], animated: false)
@@ -28,8 +23,14 @@ class HomeCoordinator: Coordinator {
         parentCoordinator?.childDidFinish(self)
     }
 
-    func goToListLightning() {
-
+    func goToHelperCenterList() {
+        let viewModel = HelpCenterViewModel()
+        let controller = HelpCenterViewController(viewModel: viewModel)
+        viewModel.actionBackButtonTapped = { [weak self] in
+            self?.back()
+        }
+        controller.coordinator = self
+        navigationController.pushViewController(controller, animated: false)
     }
     
     func back() {

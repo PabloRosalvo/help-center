@@ -12,16 +12,12 @@ class HomeViewController: UIViewController, HomeDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let api = Network()
-        api.fetchListNodes { result, error in
-            print(result)
-        }
     }
     
     override func loadView() {
         self.view = contentView
     }
+    
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)

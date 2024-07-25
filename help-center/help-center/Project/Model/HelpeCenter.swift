@@ -3,6 +3,13 @@ import Foundation
 struct HelpeCenter: Codable {
     let header: Header
     let items: [Item]
+    
+    struct Item: Codable {
+        let id: String
+        let title: String
+        let category: String?
+        let totalArticles: Int
+    }
 }
 
 struct Header: Codable {
@@ -20,9 +27,3 @@ struct Image: Codable {
     }
 }
 
-struct Item: Codable {
-    let id: String
-    let title: String
-    let category: String?
-    let totalArticles: Int
-}
