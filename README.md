@@ -8,3 +8,7 @@
 
 ## Objetivo 
 Mostrar conhecimento na platarforma e criar projetos de forma rapida 
+
+
+Uploading Screen Recording 2024-07-26 at 10.59.15.mov…
+
