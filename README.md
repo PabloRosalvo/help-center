@@ -10,5 +10,8 @@
 Mostrar conhecimento na platarforma e criar projetos de forma rapida 
 
 
-Uploading Screen Recording 2024-07-26 at 10.59.15.mov…
+
+
+
+https://github.com/user-attachments/assets/664b5c0e-b899-4d86-b845-2f0e23ee84cc
 
