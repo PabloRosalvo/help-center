@@ -30,7 +30,7 @@ class HomeCoordinator: Coordinator {
             self?.back()
         }
         controller.coordinator = self
-        navigationController.pushViewController(controller, animated: false)
+        navigationController.present(controller, animated: false)
     }
     
     func back() {

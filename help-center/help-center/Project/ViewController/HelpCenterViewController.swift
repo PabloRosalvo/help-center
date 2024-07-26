@@ -26,7 +26,7 @@ final class HelpCenterViewController: UIViewController, UISearchBarDelegate {
         super.viewDidLoad()
         self.fetch()
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(back))
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .clear
     }
     
     override func loadView() {
@@ -73,7 +73,8 @@ final class HelpCenterViewController: UIViewController, UISearchBarDelegate {
 }
 
 extension HelpCenterViewController: HelpCenterSourceDelegate {
-    func seletectIndexPathRow(_ model: HelpeCenter) {
-
+    func selectIndexPathRow(_ model: HelpeCenter) {
+        
     }
+    
 }

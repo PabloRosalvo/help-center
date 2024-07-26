@@ -36,7 +36,6 @@ class HelpCenterCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     private func setupViews() {
         contentView.addSubview(titleLabel)
         contentView.addSubview(subtitleLabel)
@@ -64,6 +63,7 @@ class HelpCenterCollectionViewCell: UICollectionViewCell {
         contentView.layer.borderWidth = 1
         contentView.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.5).cgColor
     }
+
     
     func setup(_ viewModel: HelpCenterViewModel, _ indexPath: IndexPath) {
         guard indexPath.row < viewModel.modelList.count else { return }

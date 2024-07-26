@@ -32,7 +32,6 @@
 		EBEC14772C52E4E400252514 /* ActivityIndicator+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC146D2C52E4E400252514 /* ActivityIndicator+Loading.swift */; };
 		EBEC14782C52E4E400252514 /* String+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC146E2C52E4E400252514 /* String+Language.swift */; };
 		EBEC14792C52E4E400252514 /* UIViewController+Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC146F2C52E4E400252514 /* UIViewController+Coordinator.swift */; };
-		EBEC147A2C52E4E400252514 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC14702C52E4E400252514 /* ViewConfiguration.swift */; };
 		EBEC14852C52F6AA00252514 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EBEC14822C52F6AA00252514 /* Localizable.xcstrings */; };
 		EBEC14862C52F6AA00252514 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC14832C52F6AA00252514 /* LocalizedString.swift */; };
 		EBEC14892C5302FF00252514 /* HelpeCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC14882C5302FF00252514 /* HelpeCenter.swift */; };
@@ -41,6 +40,8 @@
 		EBEC14902C53098B00252514 /* HelpCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC148F2C53098B00252514 /* HelpCenterView.swift */; };
 		EBEC14932C530A3D00252514 /* HelpCenterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC14912C530A3D00252514 /* HelpCenterDataSource.swift */; };
 		EBEC14952C530C2F00252514 /* HelpCenterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC14942C530C2F00252514 /* HelpCenterCollectionViewCell.swift */; };
+		EBEC14972C5316E100252514 /* HelpCenterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC14962C5316E100252514 /* HelpCenterHeaderView.swift */; };
+		EBEC14992C53186700252514 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC14982C53186700252514 /* ViewConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +96,6 @@
 		EBEC146D2C52E4E400252514 /* ActivityIndicator+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActivityIndicator+Loading.swift"; sourceTree = "<group>"; };
 		EBEC146E2C52E4E400252514 /* String+Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Language.swift"; sourceTree = "<group>"; };
 		EBEC146F2C52E4E400252514 /* UIViewController+Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Coordinator.swift"; sourceTree = "<group>"; };
-		EBEC14702C52E4E400252514 /* ViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		EBEC14812C52F6AA00252514 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = en; path = en.lproj/Localizable.xcstrings; sourceTree = "<group>"; };
 		EBEC14832C52F6AA00252514 /* LocalizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		EBEC14882C5302FF00252514 /* HelpeCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpeCenter.swift; sourceTree = "<group>"; };
@@ -104,6 +104,8 @@
 		EBEC148F2C53098B00252514 /* HelpCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCenterView.swift; sourceTree = "<group>"; };
 		EBEC14912C530A3D00252514 /* HelpCenterDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpCenterDataSource.swift; sourceTree = "<group>"; };
 		EBEC14942C530C2F00252514 /* HelpCenterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCenterCollectionViewCell.swift; sourceTree = "<group>"; };
+		EBEC14962C5316E100252514 /* HelpCenterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCenterHeaderView.swift; sourceTree = "<group>"; };
+		EBEC14982C53186700252514 /* ViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		F5D3DA6FB7FF1B3FDA2C1A43 /* Pods-help-centerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-help-centerTests.release.xcconfig"; path = "Target Support Files/Pods-help-centerTests/Pods-help-centerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -229,7 +231,9 @@
 			isa = PBXGroup;
 			children = (
 				EBEC14452C52E4B500252514 /* HomeView.swift */,
+				EBEC148F2C53098B00252514 /* HelpCenterView.swift */,
 				EBEC14942C530C2F00252514 /* HelpCenterCollectionViewCell.swift */,
+				EBEC14962C5316E100252514 /* HelpCenterHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,7 +274,6 @@
 			children = (
 				EBEC145F2C52E4BD00252514 /* HomeViewController.swift */,
 				EBEC148A2C53085A00252514 /* HelpCenterViewController.swift */,
-				EBEC148F2C53098B00252514 /* HelpCenterView.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -303,10 +306,10 @@
 		EBEC14712C52E4E400252514 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EBEC14982C53186700252514 /* ViewConfiguration.swift */,
 				EBEC146D2C52E4E400252514 /* ActivityIndicator+Loading.swift */,
 				EBEC146E2C52E4E400252514 /* String+Language.swift */,
 				EBEC146F2C52E4E400252514 /* UIViewController+Coordinator.swift */,
-				EBEC14702C52E4E400252514 /* ViewConfiguration.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -548,12 +551,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBEC14732C52E4E400252514 /* ErrorGeneric.swift in Sources */,
+				EBEC14972C5316E100252514 /* HelpCenterHeaderView.swift in Sources */,
 				EBEC145B2C52E4B500252514 /* Network.swift in Sources */,
 				EBEC14952C530C2F00252514 /* HelpCenterCollectionViewCell.swift in Sources */,
 				EBEC14562C52E4B500252514 /* ParameterEncoding.swift in Sources */,
 				EBEC14522C52E4B500252514 /* HomeView.swift in Sources */,
 				EBEC14582C52E4B500252514 /* RequestLog.swift in Sources */,
-				EBEC147A2C52E4E400252514 /* ViewConfiguration.swift in Sources */,
 				EBEC145A2C52E4B500252514 /* Result.swift in Sources */,
 				EBEC14742C52E4E400252514 /* ErrorViewGeneric.swift in Sources */,
 				EBEC14152C52E3B500252514 /* AppDelegate.swift in Sources */,
@@ -565,6 +568,7 @@
 				EBEC14622C52E4BD00252514 /* HomeViewModel.swift in Sources */,
 				EBEC14782C52E4E400252514 /* String+Language.swift in Sources */,
 				EBEC148E2C53088400252514 /* HelpCenterViewModel.swift in Sources */,
+				EBEC14992C53186700252514 /* ViewConfiguration.swift in Sources */,
 				EBEC14642C52E4BD00252514 /* HomeViewController.swift in Sources */,
 				EBEC14892C5302FF00252514 /* HelpeCenter.swift in Sources */,
 				EBEC148B2C53085A00252514 /* HelpCenterViewController.swift in Sources */,
